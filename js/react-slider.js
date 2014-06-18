@@ -109,11 +109,13 @@ window.reactSlider = (function () {
 		
 		
 		function moveSlideshow() {
-			if (moveForward === true) {
-				slideLeft();
-			}
-			if (moveForward === false) {
-				slideRight();
+			switch(moveForward) {
+				case true:
+					slideLeft();
+					break;
+				case false:
+					slideRight();
+					break;
 			}
 		}
 		
