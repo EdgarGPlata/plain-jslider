@@ -1,4 +1,4 @@
-react-slider
+React Slider
 ============
 
-Responsive Image Slider
+A responsive, plain javascript image slider.
