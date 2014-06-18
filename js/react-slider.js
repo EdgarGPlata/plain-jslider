@@ -2,10 +2,10 @@
 	Author: Edgar G. Plata
 **/
 
-window.slider = (function () {
+window.reactSlider = (function () {
 	'use strict';
 
-	var slider = function(element, options) {
+	var reactSlider = function(element, options) {
 
 		element = document.querySelector(element);
 		// If the element does not exist
@@ -15,14 +15,14 @@ window.slider = (function () {
 		}
 
 		// Controls Element
-		var leftControl = element.querySelector('.slider-left');
-		var rightControl = element.querySelector('.slider-right');
+		var leftControl = element.querySelector('.react-slider-left');
+		var rightControl = element.querySelector('.react-slider-right');
 
 		// Total Images
 		var totalImages = element.querySelectorAll('img').length;
 
 		// Slider Container
-		var sliderContainer = element.querySelector('.slider-container');
+		var sliderContainer = element.querySelector('.react-slider-container');
 
 		// Default slide
 		var start = 0;
@@ -152,7 +152,7 @@ window.slider = (function () {
 	}; // End slider function
 	
 	return function(element, options) {
-		return slider(element, options);
+		return reactSlider(element, options);
 	};
 	
 })();
