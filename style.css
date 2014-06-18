@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 90%;
+}
+.slider-container {
+	font-size: 0;
+	left: 0;
+	overflow: visible;
+	position: relative;
+	white-space: nowrap;
+}
+.slider-left, .slider-right {
+	font-size: 40px;
+	margin-top: -25px;
+	opacity: 0.3;
+	position: absolute;
+	top: 50%;
+}
+.slider-left:hover, .slider-right:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.slider-left {
+	left: 15px;		
+}
+.slider-right {
+	right: 15px;
+}
+.slider .slider-container img {
+	font-size: 1em;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+}
