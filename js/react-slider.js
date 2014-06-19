@@ -50,6 +50,7 @@ window.reactSlider = (function () {
 			var width = element.offsetWidth;
 			start = (imageView - 1) * width;
 			sliderContainer.style.left="-"+start+"px";
+			return;
 		}
 		
 		
@@ -59,6 +60,7 @@ window.reactSlider = (function () {
 		window.onresize = function() {
 			clearTimeout(resize);
 			resize = setTimeout(onWindowResize, 150);
+			return;
 		};
 		
 		
@@ -82,7 +84,12 @@ window.reactSlider = (function () {
 			start = start + width;
 			sliderContainer.style.left="-"+start+"px";
 			
-
+			// Check again whether start is at end
+			if (start === maxWidth) {
+				moveForward = false;
+			}
+			
+			return;
 			
 		} // End slideLeft
 		
@@ -103,6 +110,12 @@ window.reactSlider = (function () {
 			start = start - width;
 			sliderContainer.style.left="-"+start+"px";
 			
+			// Check again if user is back at first image
+			if (start === 0) {
+				moveForward = true;
+			}
+			
+			return;
 			
 		} // End slideRight
 		
@@ -117,6 +130,8 @@ window.reactSlider = (function () {
 					slideRight();
 					break;
 			}
+			
+			return;
 		}
 		
 				
@@ -140,11 +155,6 @@ window.reactSlider = (function () {
 		// Set slideshow speed in seconds
 		sliderSpeed = sliderSpeed * 1000;
 		
-		
-		console.log(animationSpeed);
-		console.log(autoPlay);
-		console.log(sliderSpeed);
-		console.log(totalImages);
 		if (autoPlay === true || autoPlay === 'true') {
 			// Start slideshow
 			setInterval(moveSlideshow, sliderSpeed);
