@@ -1,11 +1,12 @@
 /**
 	Author: Edgar G. Plata
+	http://www.edgargplata.com
 **/
 
-window.reactSlider = (function () {
+window.plainJSlider = (function () {
 	'use strict';
 
-	var reactSlider = function(element, options) {
+	var plainJSlider = function(element, options) {
 
 		element = document.querySelector(element);
 		// If the element does not exist
@@ -15,14 +16,14 @@ window.reactSlider = (function () {
 		}
 
 		// Controls Element
-		var leftControl = element.querySelector('.react-slider-left');
-		var rightControl = element.querySelector('.react-slider-right');
+		var leftControl = element.querySelector('.plain-jslider-left');
+		var rightControl = element.querySelector('.plain-jslider-right');
 
 		// Total Images
 		var totalImages = element.querySelectorAll('img').length;
 
 		// Slider Container
-		var sliderContainer = element.querySelector('.react-slider-container');
+		var sliderContainer = element.querySelector('.plain-jslider-container');
 
 		// Default slide
 		var start = 0;
@@ -164,7 +165,7 @@ window.reactSlider = (function () {
 	}; // End slider function
 	
 	return function(element, options) {
-		return reactSlider(element, options);
+		return plainJSlider(element, options);
 	};
 	
 })();

@@ -4,37 +4,37 @@
 	padding: 0;
 }
 
-.react-slider {
+.plain-jslider {
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
 	width: 90%;
 }
-.react-slider-container {
+.plain-jslider-container {
 	font-size: 0;
 	left: 0;
 	overflow: visible;
 	position: relative;
 	white-space: nowrap;
 }
-.react-slider-left, .react-slider-right {
+.plain-jslider-left, .plain-jslider-right {
 	font-size: 40px;
 	margin-top: -25px;
 	opacity: 0.3;
 	position: absolute;
 	top: 50%;
 }
-.react-slider-left:hover, .react-slider-right:hover {
+.plain-jslider-left:hover, .plain-jslider-right:hover {
 	cursor: pointer;
 	opacity: 0.7;
 }
-.react-slider-left {
+.plain-jslider-left {
 	left: 15px;		
 }
-.react-slider-right {
+.plain-jslider-right {
 	right: 15px;
 }
-.react-slider .react-slider-container img {
+.plain-jslider .plain-jslider-container img {
 	font-size: 1em;
 	box-sizing: border-box;
 	display: inline-block;

@@ -2,26 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Plugin</title>
+	<title>Plain JSlider Plugin</title>
 	<link href="../css/style.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="react-slider">
-		<div class="react-slider-container">
+	<div class="plain-jslider">
+		<div class="plain-jslider-container">
 			<img src="images/1.png" alt="Slider Image 1" />
 			<img src="images/2.png" alt="Slider Image 2" />
 			<img src="images/3.png" alt="Slider Image 2" />
 		</div>
-		<div class="react-slider-left"><</div>
-		<div class="react-slider-right">></div>
+		<div class="plain-jslider-left"><</div>
+		<div class="plain-jslider-right">></div>
 	</div>
 
-	<script src="../js/react-slider.js"></script>
+	<script src="../js/plain-jslider.js"></script>
 	<script>
 	
 		document.addEventListener("DOMContentLoaded", function() {
 			// Call slider plugin with options
-			reactSlider('.react-slider', {
+			plainJSlider('.plain-jslider', {
 				animationSpeed: 1,
 				autoPlay: 'true',
 				sliderSpeed: 4
