@@ -1,4 +1,4 @@
-Plain JSlider
+plainJSlider
 ============
 
 A responsive, plain javascript image slider.
